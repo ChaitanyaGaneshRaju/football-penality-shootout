@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Over</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/football.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="profile-icon" src="./assets/Tottenham.png" height="100px" width="100px"
+                    alt="chennai super kings" />
+                <span class="name" id="team-1-name"></span>
+                <!--Initialized empty score for team 1-->
+                <div class="row" id="team-1-round-score">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <!--Score Board in the manner of(0-0)-->
+            <div class="col">
+                <div class="row score">
+                    <span id="team-1-score"></span>
+                    <span>-</span>
+                    <span id="team-2-score"></span>
+                </div>
+            </div>
+            <div class="col">
+                <img class="profile-icon" src="./assets/Atletico.png" height="100px" width="100px"
+                    alt="mumbai indians" />
+                <span class="name" id="team-2-name"></span>
+                <!--Initialized empty score for team 2-->
+                <div class="row" id="team-2-round-score">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button id="button" onclick="buttonClick()"></button>
+        </div>
+        <!--For printing result, Initially hidden -->
+        <div class="row" id="result" hidden></div>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>

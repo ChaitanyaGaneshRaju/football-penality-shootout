@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+body {
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+}
+
+/*For white container in the middle*/
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.name {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row>span {
+    font-weight: bold;
+    font-size: x-large;
+    margin: 10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*For team score*/
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.container>.row {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.profile-icon {
+    border-radius: 50%;
+    border: 1px solid rgb(184, 182, 182);
+}
+
+#button {
+    border: none;
+    border-radius: 25px;
+    background: #780206;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-size: large;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    outline: none;
+}
+
+#button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.score {
+    margin: -80px 0 0;
+    font-size: larger;
+}
+
+
+#result {
+
+    background: #780206;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-clip: text;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
